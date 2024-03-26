@@ -1,4 +1,5 @@
 \documentclass[10pt]{article} % fontsize 10/11/12 pt
+\usepackage{standalone}
 
 \usepackage[margin=1in, a4paper]{geometry}
 \pagestyle{empty} % remove page number
@@ -30,10 +31,12 @@
     \end{minipage} \hfill
     \begin{minipage}{0.4\textwidth}
         \raggedleft
-        Ann Arbor, MI, USA\\
-        Email: loganctanner@gmail.com\\
-        Mobile: 555-555-5555\\
-        GitHub: github.com/LoganCTanner
+        \begin{description}[style=multiline, leftmargin=2cm]
+            \item[Residence] Ann Arbor, MI, USA
+            \item[Email] loganctanner@gmail.com
+            \item[Mobile] \input{phoneNumber}
+            \item[GitHub] GitHub.com/LoganCTanner
+        \end{description}
     \end{minipage}
 \end{center}
 
@@ -89,7 +92,7 @@
         their models their own, both virtually and physically}
 \end{itemize}
 
-\subsection{Concepts}
+\subsection{Pre-Development}
 \subsubsection{JEFF}
 \begin{description}[style=multiline, leftmargin=2.75cm]
     \item[Technologies] {Unified Modeling Language, C++, TypeScript, Vue}
@@ -101,10 +104,10 @@
 \subsubsection{самиздат}
 \begin{description}[style=multiline, leftmargin=2.75cm]
     \item[Technologies] {LaTeX}
-    \item[Purpose] {Pronounced ''sah-miz-dat'' is a satirical undergraduate series of texts, 
-        ranging from Maths \& Sciences to Art \& Anthropology, in order to circumvent 
-        local libraries not \\ permitting textbooks to be shelved on premises, 
-        named after the russian word for self publication, 
+    \item[Purpose] {Pronounced ''sah-miz-dat'' is a satirical undergraduate series 
+        of texts, ranging from Maths \& Sciences to Art \& Anthropology, in order 
+        to circumvent local libraries not \\ permitting textbooks to be shelved 
+        on premises, named after the russian word for self publication, 
         popularized in the soviet era during mass censorship}  
 \end{description}
 
@@ -115,12 +118,10 @@
 \begin{itemize}
     \item {Curated online community focused on subjects including Engineering,  
         Physics, \& \\ Software Development}
-    \item {Learned new skills at every chance to empower community members 
-        with interests in \\ pure mathematics, applied mathematics, 
-        \& all branches of science}
+    \item {Learned new skills at every chance to educate community members}
     \item {Networked with educators and creators to foster healthy and growing 
-        communities spanning multiple vectors of media consumption}
-    \item {Highlights: Reached over 2,100 followers, over 50 concurrent viewers}
+        communities spanning multiple vectors of media}
+    \item {Reached over 2,100 followers and over 50 concurrent viewers}
     \item {Broadcasted over 1,000 hours of live educational content for free}
 \end{itemize}
 
@@ -138,7 +139,7 @@
 \section{Skills \& Interests}
 %===========================%
 \begin{description}[style=multiline, leftmargin=2.75cm]
-    \item[Technical] {C++, Octave, MATLAB, TypeScript, Vue, Capacitor, HTML, CSS, SQLite, 
+    \item[Technical] {C++, Octave, MATLAB, TypeScript, Cheerio, Axios, Vue, Capacitor, SQLite, 
         Unreal Engine 5, Blender, LaTeX, UML}
     \item[Soft] Multitasking, Critical Thinking, Adaptability, Creativity, Leadership 
     \item[Languages] English Native, German Intermediate
