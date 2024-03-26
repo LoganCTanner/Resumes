@@ -4,5 +4,6 @@
 *.fls
 *.log
 *.synctex.gz
+*.gitignore
 
 phoneNumber.tex
