@@ -21,20 +21,45 @@
 \titleformat{\subsection}{\large\bfseries}{}{}{}
 \titleformat{\subsubsection}{\bfseries}{}{}{}
 
+\newcommand\profSumFlag{n}
+
+\newcommand\profSum[1]{
+    \if \profSumFlag s 
+        {
+            I am a software engineer with 1 year of experience working on personal 
+            projects. My focus area has been on front-end development utilizng
+            Vue and TypeScript. I have recently started back-end development, locally
+            hosted using SQLite, as well as TypeScript. Projects were created under 
+            the guidance of a senior software engineer. 
+        }
+    \fi
+    \if \profSumFlag n
+        {
+            I am a nuclear fusion engineering student working towards an Engineering 
+            Physics B.S.E. program with a focus in nuclear fusion reactor 
+            engineering. In my studies I have utilized both Octave and C++. 
+            Additionally, I have 1 year of experience with software engineering 
+            utilizing C++, TypeScript, Vue, \& SQLite, under the guidance of a 
+            senior software engineer.
+        }        
+    \fi
+}
+
 \begin{document}
 
 \begin{center}
-    \begin{minipage}{0.5\textwidth}
+    \begin{minipage}{0.55\textwidth}
         {\huge\bfseries
-            LOGAN TANNER 
-        } \\ \medskip
+            LOGAN TANNER
+        } \\ 
+        \profSum \\ \medskip
     \end{minipage} \hfill
     \begin{minipage}{0.4\textwidth}
         \raggedleft
         \begin{description}[style=multiline, leftmargin=2cm]
             \item[Residence] Ann Arbor, MI, USA
             \item[Email] loganctanner@gmail.com
-            \item[Mobile] 555-555-5555
+            \item[Mobile] 212-664-7665
             \item[GitHub] GitHub.com/LoganCTanner
         \end{description}
     \end{minipage}
@@ -42,26 +67,52 @@
 
 \section{Education}
 %=================%
-\subsection{University of Michigan College of Engineering \hfill Ann Arbor, Michigan}
-\subsubsection{B.S.E. in Engineering Physics \hfill 2027}
-\begin{itemize}
-    \item {Cumulative GPA: 4.0}
-    \item {Related Coursework: Nuclear Fusion Reactor Engineering, 
-        High Energy Density Physics, Theoretical Physics, Materials Science} 
-    \item {Specialized in Nuclear Fusion Engineering focusing in Nuclear 
-        Fusion Reactor Design for both  \\ terrestrial and astronautical implementations}
-    \item {Created networks of like minded individuals focused on advancing
-        numerous scientific fields and \\ bettering human life wherever possible}
-    \item {Utilized C++, MATLAB, \& Octave in studies}    
-\end{itemize}
+\subsection{Washtenaw Community College \hfill Ann Arbor, Michigan}
+\subsubsection{Associate in Science \hfill 2025}
+\begin{description}[style=multiline, leftmargin=2.75cm]
+    \item[GPA] {3.56}
+    \item[Coursework] {Inorganic Chemistry, Physics, Programming in C++, Calculus, 
+        Differential Equations}
+    \item[Social] {Created network of like minded individuals focused on 
+        advancing numerous scientific fields and bettering human life wherever 
+        possible.}  
+    \item[Technologies] {C++, Octave, LaTeX}
+\end{description}
+%\begin{itemize}
+%\subsection{University of Michigan \hfill Ann Arbor, Michigan}
+%\subsection{B.S.E. in Engineering Physics \hfill 2028}
+%    \item {Cumulative GPA: 4.0}
+%    \item {Related Coursework: Nuclear Fusion Reactor Engineering, 
+%        High Energy Density Physics, Theoretical Physics, Materials Science} 
+%    \item {Specialized in Nuclear Fusion Engineering focusing in Nuclear 
+%        Fusion Reactor Design for both  \\ terrestrial and astronautical implementations}
+%    \item {Created networks of like minded individuals focused on advancing
+%        numerous scientific fields and \\ bettering human life wherever possible}
+%    \item {Utilized C++, MATLAB, \& Octave in studies}    
+%\end{itemize}
+
+\subsection{WCC STEM Scholars \hfill 2024-Present}
+\begin{description}[style=multiline, leftmargin=2.75cm]
+    \item[Program Details]{The STEM Scholars program encourages,
+        supports, and facililtates success \\ in STEM students}
+    \item[Tutoring]{I officially and unofficially 
+        tutored for the program via zoom one-on-ones and group calls to support 
+        my peers in their academic pursuits}
+    \item[Mentoring]{Under the mentorship of Dr. Eric Schwab and Professor Clifford
+        Taylor, I honed my scientific and mathematic abilities to advance into 
+        domains not covered within my credited coursework}
+    \item[Scholarship]{Upon my admitance I was awarded the SSTEM scholarship, 
+        provided to the program by Michigan State University, for the maximum
+        award available} 
+\end{description}
 
 \section{Projects}
 %================%
-\subsection{Pokemon Optimal Encounter Pokedex}
-\subsubsection{Saves users time finding pokemon in the main series of games}
+\subsection{Optimal Encounter Pokedex}
+\subsubsection{Saves users time finding pokemon in the main series of pokemon games}
 \begin{description}
     \item[Technologies] {TypeScript, SQLite, Cheerio, Axios, Vue, Capacitor}
-    \item[GitHub] {[githublink]} 
+%    \item[GitHub] {[githublink]} 
 \end{description}
 \begin{itemize}
     \item {Aggregates data from: pokeapi.co and bulbapedia.bulbagarden.com}
@@ -71,27 +122,27 @@
         to process data}
 \end{itemize}
 
-\subsection{Backyard Brawl}
-\subsubsection{Family Friendly Tabletop Wargamming}
-\begin{description}
-    \item[Technologies] {Unreal Engine 5, C++, Blender}
-    \item[GitHub] {[githublink]}
-\end{description}
-\begin{itemize}
-    \item {Accessible introduction point for all ages seeking to immerse themselves
-        in surrealist worlds of mayhem and fun}
-    \item {Focus on bright, vibrant aesthetics designed to invite players to dive 
-        deeper into narrative and play}
-    \item {Approaches rules systems from minimalist perspectives favoring breadth 
-        first, and very rarely depth, to maintain sense of novelty in play while 
-        preventing players from becoming lost in successive chains of rules}
-    \item {Released both as video game, using free to play model with paid 
-        cosmetic items, and tabletop game, permitting paper model proxies to be 
-        used instead of 3D printed models to expand audience as wide as possible}
-    \item {Players highly encouraged to paint, decorate, \& in any way possible make 
-        their models their own, both virtually and physically}
-\end{itemize}
+%\subsection{Backyard Brawl}
+%\subsubsection{Family Friendly Tabletop Wargamming}
+%\begin{description}
+%    \item[Technologies] {Unreal Engine 5, C++, Blender}
+%\end{description}
+%\begin{itemize}
+%    \item {Accessible introduction point for all ages seeking to immerse themselves
+%        in surrealist worlds of mayhem and fun}
+%    \item {Focus on bright, vibrant aesthetics designed to invite players to dive 
+%        deeper into narrative and play}
+%    \item {Approaches rules systems from minimalist perspective favoring breadth 
+%        first to maintain sense of novelty in play while preventing players from 
+%        becoming lost in successive chains of rules}
+%    \item {Released both as video game, using free to play model with paid 
+%        cosmetic items, and tabletop game, permitting paper model proxies to be 
+%        used instead of 3D printed models, to ensure equal access to play}
+%    \item {Players highly encouraged to paint, decorate, \& in any way possible make 
+%        their models their own, both virtually and physically}
+%\end{itemize}
 
+%\pagebreak
 \subsection{Pre-Development}
 \subsubsection{JEFF}
 \begin{description}[style=multiline, leftmargin=2.75cm]
@@ -100,10 +151,9 @@
         through gathering patient \\ self reporting and reinforcing healthy 
         coping mechanisms learned in sessions}  
 \end{description}
-\pagebreak
 \subsubsection{самиздат}
 \begin{description}[style=multiline, leftmargin=2.75cm]
-    \item[Technologies] {LaTeX}
+    \item[Technologies] {LaTeX, Vue, Capacitor}
     \item[Purpose] {Pronounced ''sah-miz-dat'' is a satirical undergraduate series 
         of texts, ranging from Maths \& Sciences to Art \& Anthropology, in order 
         to circumvent local libraries not \\ permitting textbooks to be shelved 
@@ -111,36 +161,48 @@
         popularized in the soviet era during mass censorship}  
 \end{description}
 
+\pagebreak
+
 \section{Experience}
 %==================%
 \subsection{Twitch}
 \subsubsection{Educator \hfill 02/2021 - Present}
 \begin{itemize}
     \item {Curated online community focused on subjects including Engineering,  
-        Physics, \& \\ Software Development}
+        \\ Physics, \& Software Development}
     \item {Learned new skills at every chance to educate community members}
     \item {Networked with educators and creators to foster healthy and growing 
-        communities spanning multiple vectors of media}
+        communities \\ spanning multiple vectors of media}
     \item {Reached over 2,100 followers and over 50 concurrent viewers}
-    \item {Broadcasted over 1,000 hours of live educational content for free}
+    \item {Broadcasted over 1,000 hours of live educational content}
 \end{itemize}
 
 \subsection{YouTube}
 \subsubsection{Educator \hfill 04/2023 - Present}
 \begin{itemize}
     \item {Created informative videos for those seeking to engage in academic 
-        education \\ \& professional development}
+        education \\ and professional development}
     \item {Fostered community focused on growth and reinforcing healthy, 
-        productive habits \\ to optimize efficiency \& enjoyment of life}
+        productive habits \\ to optimize efficiency and enjoyment of life}
     \item {Dedicated research in up and coming fields of scientific research, \\ 
         mathematical research, \& engineering developments}
 \end{itemize}  
 
+\subsection{Washtenaw Community College}
+\subsubsection{Tutor \hfill 08/2024 - Present}
+\begin{itemize}
+    \item {Supported fellow STEM Scholars at Washtenaw Community College in their
+        \\ STEM related academic pursuits}
+    \item {Tutoring sessions covered Inorganic Chemistry, Calculus, and C++}
+    \item {Utilized Zoom, Open Broadcast Software, and GNU Image Manipuation Program
+        \\ to assist fellow students}
+\end{itemize}
+
 \section{Skills \& Interests}
 %===========================%
 \begin{description}[style=multiline, leftmargin=2.75cm]
-    \item[Technical] {C++, Octave, MATLAB, TypeScript, Cheerio, Axios, Vue, Capacitor, SQLite, 
-        Unreal Engine 5, Blender, LaTeX, UML}
+    \item[Technical] {C++, Octave, TypeScript, Cheerio, Axios, Vue, Capacitor, SQLite, 
+        LaTeX, UML}
     \item[Soft] Multitasking, Critical Thinking, Adaptability, Creativity, Leadership 
     \item[Languages] English Native, German Intermediate
     \item[Interests] {Cinematography, Miniature Painting \& Scenery, 
